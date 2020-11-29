@@ -285,4 +285,13 @@ nav.sidebar a.current {
 /* Flexbox */
 .flex-container {
     display: flex;
+    width: 100%;
+}
+
+.flex-item {
+    background-color: beige;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #a5a2a2;
+    /* max */
 }

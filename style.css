@@ -247,7 +247,7 @@ nav.sidebar a.current {
     width: 100%;
 }
 
-.flex-item {
+.box-item {
     display: grid;
     margin: 5px;
     padding: 20px;
@@ -283,6 +283,17 @@ nav.sidebar a.current {
     color: rgb(148, 102, 17);
 }
 
+.box {
+    margin: 5px;
+    margin-bottom: 10px;
+    padding: 20px;
+    flex: 1 1 0px;
+    /* background-color: #eef0f1; */
+    border: 1px solid #dee4e9;
+    border-radius: 5px;
+    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, .1);
+}
+
 
 /* Media Queries */
 
@@ -305,9 +316,12 @@ nav.sidebar a.current {
     .body {
         padding-left: 0px;
     }
-    .flex-container {
+    .gridwise {
         display: grid;
         grid-template-columns: auto auto;
+    }
+    .blockwise {
+        display: block;
     }
 }
 

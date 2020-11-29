@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="iub_logo.jpg" />
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 </head>
 
 <body>
@@ -136,21 +137,80 @@
     </nav>
     <div class="body">
         <div class="main-content">
-            <div class="flex-container">
-                <div class="flex-item blue">
+            <div class="flex-container gridwise">
+                <div class="box-item blue">
                     <span><b>Students:</b><br /> 200</span>
                 </div>
-                <div class="flex-item red">
+                <div class="box-item red">
                     <span>
                         <b>Faculties:</b><br /> 20
                     </span>
                 </div>
-                <div class="flex-item green">
+                <div class="box-item green">
                     <span><b>Admin:</b><br /> 1</span>
                 </div>
-                <div class="flex-item orange">
+                <div class="box-item orange">
                     <span><b>UGC:</b><br /> 1</span>
                 </div>
+            </div>
+            <div class="flex-container blockwise">
+                <div class="box">
+                    <div style="width: 78%; margin-left: auto; margin-right: auto;">
+                        <canvas id="chart1" width="300" height="200"></canvas>
+                    </div>
+                </div>
+                <div class="box">
+                    <div style="width: 78%; margin-left: auto; margin-right: auto;">
+                        <canvas id="chart2" width="300" height="200"></canvas>
+                    </div>
+                </div>
+                <script>
+                    var ctx1 = document.getElementById('chart1').getContext('2d');
+                    var ctx2 = document.getElementById('chart2').getContext('2d');
+                    lineChart1(ctx1);
+                    lineChart2(ctx2);
+                    // Chart.defaults.font.size = 16;
+                    function lineChart1(ctx) {
+                        var chart = new Chart(ctx, {
+                            // The type of chart we want to create
+                            type: 'line',
+        
+                            // The data for our dataset
+                            data: {
+                                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                                datasets: [{
+                                    label: 'Sample Dataset 1',
+                                    backgroundColor: '#d9e2ec',
+                                    borderColor: '#094480',
+                                    data: [2, 10, 5, 3, 20, 30, 45]
+                                }]
+                            },
+        
+                            // Configuration options go here
+                            options: {}
+                        });
+                    }
+                    function lineChart2(ctx) {
+                        var chart = new Chart(ctx, {
+                            // The type of chart we want to create
+                            type: 'line',
+        
+                            // The data for our dataset
+                            data: {
+                                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                                datasets: [{
+                                    label: 'Sample Dataset 2',
+                                    backgroundColor: '#f0cdcd',
+                                    borderColor: '#962323',
+                                    data: [8, 5, 8, 9, 13, 11, 12]
+                                }]
+                            },
+        
+                            // Configuration options go here
+                            options: {}
+                        });
+                    }
+                </script>
             </div>
         </div>
     </div>

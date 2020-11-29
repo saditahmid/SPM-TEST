@@ -167,9 +167,9 @@ nav.sidebar {
     overflow-y: auto;
 } */
 
-div.sidebar-holder {
-    /* text-align: justify; */
-}
+/* div.sidebar-holder {
+    text-align: justify;
+} */
 
 nav.sidebar ul {
     list-style-type: none;

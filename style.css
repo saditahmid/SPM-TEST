@@ -56,6 +56,16 @@ li.heading-li a:not(.heading-logo-li) {
     font-size: 20px;
 }
 
+div.more {
+    padding: 19px;
+    color: black;
+    cursor: pointer;
+}
+
+div.more:hover {
+    background-color: #cccccf
+}
+
 ul.heading-ul li:not(.heading-li) {
     float: right;
 }
@@ -135,6 +145,7 @@ li.heading-logo {
 /* Sidebar */
 
 nav.sidebar {
+    display: block;
     position: fixed;
     margin: 0px;
     margin-top: 58px;
@@ -268,4 +279,10 @@ nav.sidebar a.current {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #4a4f52;
+}
+
+
+/* Flexbox */
+.flex-container {
+    display: flex;
 }

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Student Performance Monitor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="iub_logo.jpg" />
+</head>
+
+<body>
+    <nav class="heading">
+        <ul class="heading-ul">
+            <li class="heading-li heading-logo stay">
+                <a class="heading-logo-li title" href=""><img src="iub_logo.png" height="50px" /></a>
+            </li>
+            <li class="heading-li stay"><a class="title" href="">Student Performance Monitor</a></li>
+            <li>
+                <div class="heading-dropdown">
+                    <span class="heading-dropdown-icon">
+                        <svg width="25px" height="25px" viewBox="0 0 16 16" class="bi bi-person-fill"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                        </svg>
+                    </span>
+                    <span class="heading-dropdown-text">Username</span>
+                </div>
+            </li>
+            <!-- <li><a href="">Logout</a></li> -->
+            <!-- <li><a href="">Status</a></li> -->
+            <!-- <li class="heading-li heading-logo"><a class="heading-logo" href=""><img height="25px" src="three-bars.svg" /></a></li> -->
+            <li class="stay" id="more-bar"><a href=""><span class="glyphicon glyphicon-nav"
+                        aria-hidden="true"></span></a></li>
+        </ul>
+    </nav>
+
+    <nav class="sidebar">
+        <div class="sidebar-holder">
+            <ul>
+                <li>
+                    <a class="current" href="">
+                        <span class="sidebar-logo">
+                            <svg viewBox="0 0 16 16" class="bi bi-house" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                                <path fill-rule="evenodd"
+                                    d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                            </svg>
+                        </span>
+                        <span class="sidebar-text">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="sidebar-logo">
+                            <svg viewBox="0 0 16 16" class="bi bi-pencil-square" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                <path fill-rule="evenodd"
+                                    d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                            </svg>
+                        </span>
+                        <span class="sidebar-text">
+                            Data Entry
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="sidebar-logo">
+                            <svg viewBox="0 0 16 16" class="bi bi-clipboard-data" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                                <path fill-rule="evenodd"
+                                    d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                                <path
+                                    d="M4 11a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0v-1zm6-4a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0V7zM7 9a1 1 0 0 1 2 0v3a1 1 0 1 1-2 0V9z" />
+                            </svg>
+                        </span>
+                        <span class="sidebar-text">
+                            Overall Result
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="sidebar-logo">
+                            <svg viewBox="0 0 16 16" class="bi bi-gear" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8.837 1.626c-.246-.835-1.428-.835-1.674 0l-.094.319A1.873 1.873 0 0 1 4.377 3.06l-.292-.16c-.764-.415-1.6.42-1.184 1.185l.159.292a1.873 1.873 0 0 1-1.115 2.692l-.319.094c-.835.246-.835 1.428 0 1.674l.319.094a1.873 1.873 0 0 1 1.115 2.693l-.16.291c-.415.764.42 1.6 1.185 1.184l.292-.159a1.873 1.873 0 0 1 2.692 1.116l.094.318c.246.835 1.428.835 1.674 0l.094-.319a1.873 1.873 0 0 1 2.693-1.115l.291.16c.764.415 1.6-.42 1.184-1.185l-.159-.291a1.873 1.873 0 0 1 1.116-2.693l.318-.094c.835-.246.835-1.428 0-1.674l-.319-.094a1.873 1.873 0 0 1-1.115-2.692l.16-.292c.415-.764-.42-1.6-1.185-1.184l-.291.159A1.873 1.873 0 0 1 8.93 1.945l-.094-.319zm-2.633-.283c.527-1.79 3.065-1.79 3.592 0l.094.319a.873.873 0 0 0 1.255.52l.292-.16c1.64-.892 3.434.901 2.54 2.541l-.159.292a.873.873 0 0 0 .52 1.255l.319.094c1.79.527 1.79 3.065 0 3.592l-.319.094a.873.873 0 0 0-.52 1.255l.16.292c.893 1.64-.902 3.434-2.541 2.54l-.292-.159a.873.873 0 0 0-1.255.52l-.094.319c-.527 1.79-3.065 1.79-3.592 0l-.094-.319a.873.873 0 0 0-1.255-.52l-.292.16c-1.64.893-3.433-.902-2.54-2.541l.159-.292a.873.873 0 0 0-.52-1.255l-.319-.094c-1.79-.527-1.79-3.065 0-3.592l.319-.094a.873.873 0 0 0 .52-1.255l-.16-.292c-.892-1.64.902-3.433 2.541-2.54l.292.159a.873.873 0 0 0 1.255-.52l.094-.319z" />
+                                <path fill-rule="evenodd"
+                                    d="M8 5.754a2.246 2.246 0 1 0 0 4.492 2.246 2.246 0 0 0 0-4.492zM4.754 8a3.246 3.246 0 1 1 6.492 0 3.246 3.246 0 0 1-6.492 0z" />
+                            </svg>
+                        </span>
+                        <span class="sidebar-text">
+                            Account Settings
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="sidebar-logo">
+                            <svg viewBox="0 0 16 16" class="bi bi-door-open" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M1 15.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM11.5 2H11V1h.5A1.5 1.5 0 0 1 13 2.5V15h-1V2.5a.5.5 0 0 0-.5-.5z" />
+                                <path fill-rule="evenodd"
+                                    d="M10.828.122A.5.5 0 0 1 11 .5V15h-1V1.077l-6 .857V15H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117z" />
+                                <path d="M8 9c0 .552.224 1 .5 1s.5-.448.5-1-.224-1-.5-1-.5.448-.5 1z" />
+                            </svg>
+                        </span>
+                        <span class="sidebar-text">
+                            Log Out
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="sidebar-logo">
+
+                        </span>
+                        <span class="sidebar-text">
+
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="body">
+        <div class="main-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aperiam quas fugit perferendis incidunt? Dolorum culpa debitis hic voluptatum beatae illo omnis repellendus numquam inventore libero ut magni, corrupti velit minima minus non. Doloremque expedita,
+            non atque officia ratione voluptas quia fugiat! Officiis, aperiam sapiente quod dolore perferendis possimus porro. Molestias odio magnam esse quis deleniti ea alias sed, possimus laboriosam ducimus temporibus fugiat. Laboriosam accusamus corporis
+            reiciendis odit delectus tempora esse magnam minus est perferendis saepe distinctio, impedit animi nobis accusantium aut quibusdam ipsum maiores laudantium voluptates! Suscipit vel delectus ab dignissimos aspernatur quis nemo quas voluptas
+            ipsa. Debitis reprehenderit voluptatum eligendi adipisci explicabo illum dolorem accusamus nostrum eum provident. Fugiat blanditiis vero nisi, suscipit optio voluptatibus culpa cum nobis perferendis veritatis impedit, illo quas non harum?
+            Quis quaerat, amet nisi sint expedita dolores architecto nostrum vitae fugiat quasi perferendis consequuntur rerum cumque beatae dolor facilis vel laborum necessitatibus saepe laudantium animi! Magni vero minus sequi sint neque veniam beatae
+            cumque cum sed molestiae suscipit obcaecati in ea fugit vel necessitatibus, aliquid est aspernatur tempora! Similique ullam eos molestias beatae cumque temporibus illum, iusto ducimus explicabo voluptate libero nulla excepturi nobis officia
+            ipsam veritatis, mollitia quis placeat provident unde voluptatum eaque natus a tempora. Ab veniam et repellat aspernatur officiis. At et minima, doloremque rerum laborum natus qui a consectetur, nostrum tempore perspiciatis modi pariatur ea
+            facilis dolores. Architecto ipsa nesciunt magni necessitatibus quis nam eius rerum labore repudiandae vitae corporis quae iure explicabo aliquid dolores reiciendis odit blanditiis vero, tempora similique rem sit adipisci mollitia voluptate.
+            Officia itaque accusantium quaerat vitae voluptatem impedit architecto? Voluptas esse recusandae sint beatae, laudantium porro explicabo necessitatibus atque. Autem vero vel ipsa magnam voluptas? Eum, rem, ut ab sapiente culpa porro temporibus
+            nulla doloribus hic, natus vitae quod aspernatur dicta veritatis officiis voluptate magni. Eaque commodi quidem quia cupiditate sint impedit corporis vel dolore in, quibusdam deserunt sed repellat inventore ullam excepturi sit voluptatum,
+            magnam consequuntur? Nihil, vel accusamus natus quas veritatis libero quos temporibus architecto consequatur, doloremque amet tenetur! At nam quaerat, sint veritatis vel similique et reiciendis eum dignissimos laboriosam dolore, amet aut officia.
+            Perferendis iste, illum officiis animi doloribus praesentium fugit possimus ex, dolorum nesciunt excepturi, quae adipisci mollitia est repellendus. Nam obcaecati ducimus voluptates sit pariatur neque nobis, quo dolores, facilis exercitationem
+            ab. Nemo culpa, consequatur impedit quis, atque ducimus nam, corporis numquam distinctio autem minima voluptatibus nisi repudiandae? Alias tenetur atque deserunt at facilis ullam, hic voluptatem incidunt nobis inventore laborum autem, debitis
+            quasi deleniti? Quia doloribus corrupti fugit repellendus nihil, tempora itaque fugiat vero vitae amet aut nobis eveniet minus accusantium velit nam debitis quis. Minus ratione, alias dolores deserunt reiciendis eveniet debitis praesentium
+            nisi voluptatum molestiae in optio cum delectus, accusantium exercitationem blanditiis recusandae ipsum! Ipsa, perferendis nulla. Reprehenderit atque, necessitatibus tenetur, earum minima alias magni saepe dignissimos ipsum, repellendus officia
+            aspernatur qui. Tempore illo doloribus unde libero, totam modi quasi sint incidunt nesciunt, nulla ducimus temporibus fugiat ratione qui, itaque ipsa suscipit mollitia sit.
+        </div>
+    </div>
+</body>
+
+</html>

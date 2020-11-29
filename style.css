@@ -1,0 +1,271 @@
+* {
+    font-family: 'Oxygen', sans-serif;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Heading */
+
+nav.heading {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .08);
+    border-bottom: 1px solid #dee4e9;
+}
+
+ul.heading-ul {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    min-height: 58px;
+    float: left;
+    list-style-type: none;
+    /* background-color: #ebebff; */
+    background-image: url('background.gif');
+}
+
+ul.heading-ul a:not(.heading-logo-li) {
+    display: block;
+    padding: 19px;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+ul.heading-ul a:hover:not(.title) {
+    background-color: #cccccf;
+    color: black;
+}
+
+li.heading-li {
+    float: left;
+}
+
+li.heading-li a:not(.heading-logo-li) {
+    padding: 16px;
+    color: black;
+    font-size: 20px;
+}
+
+ul.heading-ul li:not(.heading-li) {
+    float: right;
+}
+
+li.heading-logo {
+    padding-top: 4px;
+    padding-left: 15px;
+    padding-bottom: 0px;
+    margin: 0px
+}
+
+.heading-dropdown {
+    display: block;
+    float: left;
+    height: 59px;
+    padding: 0px;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.heading-dropdown:hover {
+    background-color: #cccccf;
+    color: black;
+}
+
+.heading-dropdown-icon {
+    display: block;
+    float: left;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+.heading-dropdown-text {
+    display: block;
+    float: left;
+    padding-top: 19px;
+    padding-right: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+/* Three dashed bars */
+
+.glyphicon-nav {
+    width: 25px;
+    padding: 8px 0;
+    position: relative;
+    display: inline-block;
+}
+
+.glyphicon-nav:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    top: 0px;
+}
+
+.glyphicon-nav:after {
+    content: '';
+    position: absolute;
+    top: 55%;
+    left: 0px;
+    height: 2px;
+    width: 100%;
+    background: rgb(0, 0, 0);
+}
+
+
+/* Sidebar */
+
+nav.sidebar {
+    position: fixed;
+    margin: 0px;
+    margin-top: 58px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 14px 0px 20px;
+    width: 250px;
+    background-color: #f8f9fa;
+    border-right: 1px solid #dee4e9;
+    overflow-y: auto;
+    z-index: 5;
+}
+
+
+/* div.sidebar-holder {
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+} */
+
+div.sidebar-holder {
+    /* text-align: justify; */
+}
+
+nav.sidebar ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    width: 100%;
+}
+
+nav.sidebar li {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav.sidebar a {
+    display: block;
+    float: left;
+    padding-top: 10px;
+    padding-left: 15px;
+    width: 100%;
+    color: black;
+}
+
+nav.sidebar a:hover {
+    background-color: #dee4e9;
+}
+
+nav.sidebar a.current {
+    /* background-color: #2e3a44; */
+    background-color: #dee4e9;
+    color: #003866;
+}
+
+.sidebar-logo {
+    display: block;
+    float: left;
+    padding: 5px;
+}
+
+.sidebar-logo svg {
+    width: 20px;
+    height: 20px;
+}
+
+.sidebar-text {
+    display: block;
+    float: left;
+    padding: 6px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+
+/* Main body */
+
+.body {
+    display: block;
+    width: 100%;
+    padding: 0px;
+    padding-top: 59px;
+    padding-left: 250px;
+}
+
+.main-content {
+    margin: 10px;
+}
+
+
+/* Media Queries */
+
+#more-bar {
+    display: none;
+}
+
+@media (max-width: 850px) {
+    .heading li:not(.stay) {
+        display: none;
+    }
+    #more-bar {
+        display: block;
+    }
+    nav.sidebar {
+        display: none;
+        width: 100%;
+        border: none;
+    }
+    .body {
+        padding-left: 0px;
+    }
+}
+
+
+/* Scrollbar (not supported in Firefox) */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #696c70;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4a4f52;
+}

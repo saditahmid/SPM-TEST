@@ -167,6 +167,7 @@ nav.sidebar {
     overflow-y: auto;
 } */
 
+
 /* div.sidebar-holder {
     text-align: justify;
 } */
@@ -239,6 +240,50 @@ nav.sidebar a.current {
 }
 
 
+/* Flexbox */
+
+.flex-container {
+    display: flex;
+    width: 100%;
+}
+
+.flex-item {
+    display: grid;
+    margin: 5px;
+    padding: 20px;
+    /* flex-grow: 1; */
+    flex: 1 1 0px;
+    height: 200px;
+    background-color: #eef0f1;
+    font-size: 25px;
+    /* border: 1px solid #dee4e9; */
+    border-radius: 5px;
+    text-align: center;
+    place-items: center;
+    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, .1);
+}
+
+.blue {
+    background-color: #d9e2ec;
+    color: #094480;
+}
+
+.red {
+    background-color: #f0cdcd;
+    color: #962323;
+}
+
+.green {
+    background-color: #d8e7d0;
+    color: #178517;
+}
+
+.orange {
+    background-color: rgb(250, 224, 175);
+    color: rgb(148, 102, 17);
+}
+
+
 /* Media Queries */
 
 #more-bar {
@@ -260,6 +305,10 @@ nav.sidebar a.current {
     .body {
         padding-left: 0px;
     }
+    .flex-container {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
 }
 
 
@@ -279,19 +328,4 @@ nav.sidebar a.current {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #4a4f52;
-}
-
-
-/* Flexbox */
-.flex-container {
-    display: flex;
-    width: 100%;
-}
-
-.flex-item {
-    background-color: beige;
-    margin: 5px;
-    padding: 5px;
-    border: 1px solid #a5a2a2;
-    /* max */
 }

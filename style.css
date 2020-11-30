@@ -258,7 +258,7 @@ nav.sidebar a.current {
     background-color: #eef0f1;
     font-size: 25px;
     /* border: 1px solid #dee4e9; */
-    border-radius: 5px;
+    border-radius: 6px;
     text-align: center;
     place-items: center;
     box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, .1);
@@ -291,7 +291,7 @@ nav.sidebar a.current {
     flex: 1 1 0px;
     /* background-color: #eef0f1; */
     border: 1px solid #dee4e9;
-    border-radius: 5px;
+    border-radius: 6px;
     box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, .1);
 }
 

@@ -175,6 +175,7 @@ nav.sidebar {
 nav.sidebar ul {
     list-style-type: none;
     margin: 0px;
+    margin-top: 2px;
     padding: 0px;
     float: left;
     width: 100%;

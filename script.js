@@ -17,6 +17,9 @@ function toggle_more() {
 
 
 function lineChart(ctx, labelName, labelList, dataList, bdcolor, bgcolor) {
+    Chart.defaults.global.defaultFontFamily = "Oxygen";
+    Chart.defaults.global.defaultFontColor = "black";
+    
     var chart = new Chart(ctx, {
         // The type of chart we want to create
         type: 'line',

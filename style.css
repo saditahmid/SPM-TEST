@@ -1,3 +1,14 @@
+@font-face {
+    font-family: Oxygen;
+    src: url(Oxygen-Regular.ttf);
+}
+
+@font-face {
+    font-family: Oxygen;
+    src: url(Oxygen-Bold.ttf);
+    font-weight: bold;
+}
+
 * {
     font-family: 'Oxygen', sans-serif;
     box-sizing: border-box;

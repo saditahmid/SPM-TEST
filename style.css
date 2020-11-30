@@ -295,6 +295,12 @@ nav.sidebar a.current {
     box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, .1);
 }
 
+.chart {
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /* Media Queries */
 

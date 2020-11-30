@@ -4,7 +4,7 @@
 <head>
     <title>Student Performance Monitor</title>
     <!-- <meta id="viewport" name="viewport" content ="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" /> -->
-    <meta id="viewport" name="viewport" content ="width=device-width" />
+    <meta id="viewport" name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="iub_logo.jpg" />
     <script src="script.js"></script>
@@ -17,7 +17,8 @@
             <li class="heading-li heading-logo stay">
                 <a class="heading-logo-li title" href=""><img src="iub_logo.png" height="50px" /></a>
             </li>
-            <li class="heading-li stay"><a class="title" href=""><span class="title-full-name">Student Performance Monitor</span><span class="title-short-name">SPM</span></a></li>
+            <li class="heading-li stay"><a class="title" href=""><span class="title-full-name">Student Performance
+                        Monitor</span><span class="title-short-name">SPM</span></a></li>
             <li>
                 <div class="heading-dropdown">
                     <span class="heading-dropdown-icon">
@@ -39,7 +40,7 @@
             </li>
         </ul>
     </nav>
-
+    <nav class="sidebar-background"></nav>
     <nav class="sidebar">
         <div class="sidebar-holder">
             <ul>
@@ -124,7 +125,7 @@
                         </span>
                     </a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="">
                         <span class="sidebar-logo">
 
@@ -133,7 +134,7 @@
 
                         </span>
                     </a>
-                </li>
+                </li> -->
             </ul>
         </div>
     </nav>
@@ -169,7 +170,7 @@
                 <script>
                     var ctx1 = document.getElementById('chart1').getContext('2d');
                     var ctx2 = document.getElementById('chart2').getContext('2d');
-                    
+
                     lineChart(ctx1, 'Sample Dataset 1', ['January', 'February', 'March', 'April', 'May', 'June', 'July'], [2, 10, 5, 3, 20, 30, 45], '#094480', '#d9e2ec');
                     lineChart(ctx2, 'Sample Dataset 2', ['January', 'February', 'March', 'April', 'May', 'June', 'July'], [8, 5, 8, 9, 13, 11, 12], '#962323', '#f0cdcd');
                 </script>

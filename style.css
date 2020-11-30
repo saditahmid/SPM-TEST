@@ -307,6 +307,12 @@ nav.sidebar a.current {
 #more-bar {
     display: none;
 }
+.title-full-name {
+    display: inline;
+}
+.title-short-name {
+    display: none;
+}
 
 @media (max-width: 850px) {
     .heading li:not(.stay) {
@@ -332,6 +338,14 @@ nav.sidebar a.current {
     }
 }
 
+@media (max-width: 600px) {
+    .title-full-name {
+        display: none;
+    }
+    .title-short-name {
+        display: inline;
+    }
+}
 
 /* Scrollbar (not supported in Firefox) */
 

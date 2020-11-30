@@ -169,51 +169,12 @@
                 <script>
                     Chart.defaults.global.defaultFontFamily = "Oxygen";
                     Chart.defaults.global.defaultFontColor = "black";
+                    
                     var ctx1 = document.getElementById('chart1').getContext('2d');
                     var ctx2 = document.getElementById('chart2').getContext('2d');
-                    lineChart1(ctx1);
-                    lineChart2(ctx2);
-                    // Chart.defaults.font.size = 16;
-                    function lineChart1(ctx) {
-                        var chart = new Chart(ctx, {
-                            // The type of chart we want to create
-                            type: 'line',
-        
-                            // The data for our dataset
-                            data: {
-                                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-                                datasets: [{
-                                    label: 'Sample Dataset 1',
-                                    backgroundColor: '#d9e2ec',
-                                    borderColor: '#094480',
-                                    data: [2, 10, 5, 3, 20, 30, 45]
-                                }]
-                            },
-        
-                            // Configuration options go here
-                            options: {}
-                        });
-                    }
-                    function lineChart2(ctx) {
-                        var chart = new Chart(ctx, {
-                            // The type of chart we want to create
-                            type: 'line',
-        
-                            // The data for our dataset
-                            data: {
-                                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-                                datasets: [{
-                                    label: 'Sample Dataset 2',
-                                    backgroundColor: '#f0cdcd',
-                                    borderColor: '#962323',
-                                    data: [8, 5, 8, 9, 13, 11, 12]
-                                }]
-                            },
-        
-                            // Configuration options go here
-                            options: {}
-                        });
-                    }
+                    
+                    lineChart(ctx1, 'Sample Dataset 1', ['January', 'February', 'March', 'April', 'May', 'June', 'July'], [2, 10, 5, 3, 20, 30, 45], '#094480', '#d9e2ec');
+                    lineChart(ctx2, 'Sample Dataset 2', ['January', 'February', 'March', 'April', 'May', 'June', 'July'], [8, 5, 8, 9, 13, 11, 12], '#962323', '#f0cdcd');
                 </script>
             </div>
         </div>

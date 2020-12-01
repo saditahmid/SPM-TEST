@@ -36,14 +36,11 @@ function lineChart(ctx, labelName, labelList, dataList, bdcolor, bgcolor) {
 }
 
 window.addEventListener('resize', () => {
-    var sidebar = document.querySelector('.sidebar');
-    var sidebarBackground = document.querySelector('.sidebar-background');
-
     if (window.innerWidth > 850) {
-        sidebar.style.display = 'block';
-        sidebarBackground.style.display = 'block';
-    } else {
-        sidebar.style.display = 'none';
-        sidebarBackground.style.display = 'none';
+        var sidebar = document.querySelector('.sidebar');
+        var sidebarBackground = document.querySelector('.sidebar-background');
+        
+        sidebar.style.display = '';
+        sidebarBackground.style.display = '';
     }
 });

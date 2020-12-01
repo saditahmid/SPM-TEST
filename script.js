@@ -36,7 +36,6 @@ function lineChart(ctx, labelName, labelList, dataList, bdcolor, bgcolor) {
 }
 
 window.addEventListener('resize', () => {
-    // alert(`Height: ${window.innerHeight}`);
     var sidebar = document.querySelector('.sidebar');
     var sidebarBackground = document.querySelector('.sidebar-background');
 

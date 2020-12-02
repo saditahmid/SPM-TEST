@@ -10,7 +10,7 @@ function toggle_more() {
     } else {
         sidebar.style.display = 'block';
         sidebarBackground.style.display = 'block';
-        moreButton.style.backgroundColor = '#919194';
+        moreButton.style.backgroundColor = '#a7a7aa';
     }
 }
 

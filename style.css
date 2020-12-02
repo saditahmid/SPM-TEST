@@ -77,11 +77,11 @@ div.more:hover {
 }
 
 div.more:focus {
-    background-color: #919194;
+    background-color: #a7a7aa;
 }
 
 div.more:active {
-    background-color: #919194;
+    background-color: #a7a7aa;
 }
 
 ul.heading-ul li:not(.heading-li) {

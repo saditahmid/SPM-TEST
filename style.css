@@ -73,7 +73,15 @@ div.more {
 }
 
 div.more:hover {
-    background-color: #cccccf
+    background-color: #cccccf;
+}
+
+div.more:focus {
+    background-color: #919194;
+}
+
+div.more:active {
+    background-color: #919194;
 }
 
 ul.heading-ul li:not(.heading-li) {
@@ -332,7 +340,7 @@ nav.sidebar a.current {
         display: block;
     }
     nav.sidebar {
-        display: none;
+        display: none;  
         width: 100%;
     }
     .sidebar-background {

@@ -1,13 +1,16 @@
 function toggle_more() {
     var sidebar = document.querySelector('.sidebar');
     var sidebarBackground = document.querySelector('.sidebar-background');
+    var moreButton = document.querySelector('div.more');
 
     if (sidebar.style.display == 'block') {
-        sidebar.style.display = 'none';
-        sidebarBackground.style.display = 'none';
+        sidebar.style.display = '';
+        sidebarBackground.style.display = '';
+        moreButton.style.backgroundColor = '';
     } else {
         sidebar.style.display = 'block';
         sidebarBackground.style.display = 'block';
+        moreButton.style.backgroundColor = '#919194';
     }
 }
 
@@ -39,8 +42,10 @@ window.addEventListener('resize', () => {
     if (window.innerWidth > 850) {
         var sidebar = document.querySelector('.sidebar');
         var sidebarBackground = document.querySelector('.sidebar-background');
-        
+        var moreButton = document.querySelector('div.more');
+
         sidebar.style.display = '';
         sidebarBackground.style.display = '';
+        moreButton.style.backgroundColor = '';
     }
 });

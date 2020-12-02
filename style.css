@@ -301,6 +301,11 @@ nav.sidebar a.current {
     color: rgb(148, 102, 17);
 }
 
+.black {
+    background-color: rgb(207, 206, 212);
+    color: rgb(32, 31, 36);
+}
+
 .box {
     margin: 5px;
     margin-bottom: 10px;
@@ -309,6 +314,41 @@ nav.sidebar a.current {
     border: 1px solid #dee4e9;
     border-radius: 6px;
     box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, .12);
+}
+
+.box-section {
+    margin: 5px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 0px;
+    flex: 1 1 0px;
+    border: 1px solid #dee4e9;
+    border-radius: 6px;
+    box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, .12);
+    text-align: left;
+}
+
+.box-section-head {
+    padding: 15px 30px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    /* background-color: rgb(199, 200, 200); */ /* rgb(224, 227, 230); rgb(109, 84, 84); */
+    /* color: white; */
+    background-color: rgb(229, 230, 233);
+    /* color: rgb(0, 0, 0); */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.box-section-body {
+    padding: 0px 30px;
+}
+
+.marg-top {
+    margin-top: 30px;
+}
+.marg-bottom {
+    margin-bottom: 30px;
 }
 
 .chart {

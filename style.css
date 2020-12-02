@@ -339,6 +339,7 @@ nav.sidebar a.current {
 
 .box-section-body {
     padding: 0px 30px;
+    overflow: auto;
 }
 
 .marg-top {

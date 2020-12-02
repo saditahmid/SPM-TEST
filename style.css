@@ -306,6 +306,11 @@ nav.sidebar a.current {
     color: rgb(32, 31, 36);
 }
 
+.white {
+    background-color: rgb(229, 230, 233);
+    color: black;
+}
+
 .box {
     margin: 5px;
     margin-bottom: 10px;
@@ -332,7 +337,7 @@ nav.sidebar a.current {
     padding: 15px 30px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-    background-color: rgb(229, 230, 233);
+    background-color: rgba(70, 66, 66, 0.05);
     font-size: 20px;
     font-weight: bold;
 }

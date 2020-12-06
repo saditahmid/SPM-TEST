@@ -14,7 +14,7 @@ function toggle_more() {
     }
 }
 
-function lineChart(ctx, labelName, labelList, dataList, bdcolor='#094480', bgcolor='#d9e2ec') {
+function lineChart(ctx, labelName, labelList, dataList, bdcolor = '#094480', bgcolor = '#d9e2ec') {
     Chart.defaults.global.defaultFontFamily = "Oxygen";
     Chart.defaults.global.defaultFontColor = "black";
 

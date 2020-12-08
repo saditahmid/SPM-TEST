@@ -455,16 +455,17 @@ nav.sidebar a.current {
 }
 
 .form-table td:not(.last-row) {
-    padding-bottom: 8px;
+    padding-bottom: 10px;
 }
 
 .form-table tr>td {
     text-align: right;
+    padding-right: 5px;
 }
 
 @media (min-width: 518px) {
     .form-field {
-        width: 300px;
+        width: 280px;
     }
 }
 @media (max-width: 405px) {

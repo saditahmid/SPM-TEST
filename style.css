@@ -413,6 +413,12 @@ nav.sidebar a.current {
     }
 }
 
+@media (max-width: 350px) {
+    .gridwise {
+        display: block;
+    }
+}
+
 
 /* Scrollbar (not supported in Firefox) */
 
@@ -433,3 +439,41 @@ nav.sidebar a.current {
 ::-webkit-scrollbar-thumb:hover {
     background: #4a4f52;
 }
+
+
+/* Form */
+
+.form-table {
+    /* width: 100%; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-table input,
+.form-table label {
+    margin-right: 10px;
+}
+
+.form-table td:not(.last-row) {
+    padding-bottom: 8px;
+}
+
+.form-table tr>td {
+    text-align: right;
+}
+
+@media (min-width: 518px) {
+    .form-field {
+        width: 300px;
+    }
+}
+@media (max-width: 405px) {
+    .form-table tr>td {
+        text-align: left;
+    }
+}
+/* @media (min-width: 850px) {
+    .form-table tr>td {
+        text-align: right;
+    }
+} */

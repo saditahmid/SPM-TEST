@@ -1,4 +1,4 @@
-// Script
+// script.js
 
 function toggle_more() {
     var sidebar = document.querySelector('.sidebar');

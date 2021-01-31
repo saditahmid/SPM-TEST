@@ -1,3 +1,5 @@
+// Script
+
 function toggle_more() {
     var sidebar = document.querySelector('.sidebar');
     var sidebarBackground = document.querySelector('.sidebar-background');
